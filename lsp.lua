@@ -26,6 +26,15 @@ return {
       },
     },
 
+    -- override the mason server-registration function
+    server_registration = function(server, opts)
+      if server == "sumneko_lua" then
+        opts = vim.tbl_deep_extend("force", opts, require("lua-dev").setup())
+      end
+
+      require("lspconfig")[server].setup(opts)
+    end,
+
     -- Add overrides for LSP server settings, the keys are the name of the server
     ["server-settings"] = {
       -- example for addings schemas to yamlls

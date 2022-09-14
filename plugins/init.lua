@@ -6,6 +6,7 @@ return {
   ["ray-x/lsp_signature.nvim"] = require "user.plugins.lsp_signature",
   ["phaazon/hop.nvim"] = require "user.plugins.hop",
   ["nacro90/numb.nvim"] = require "user.plugins.numb",
+  ["nvim-treesitter/nvim-treesitter-context"] = require "user.plugins.nvim-treesitter-context",
 
   -- Simple configs
   { "folke/lua-dev.nvim" },

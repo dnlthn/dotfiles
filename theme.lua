@@ -36,16 +36,16 @@ return {
     -- duskfox = { -- a table of overrides/changes to the default
     --   Normal = { bg = "#000000" },
     -- },
-    default_theme = function(highlights) -- or a function that returns a new table of colors to set
+    default_theme = function(hl) -- or a function that returns a new table of colors to set
       local C = require "default_theme.colors"
-      highlights.FloatBorder = { fg = C.grey_4 }
-      highlights.NormalFloat = { bg = C.bg }
 
-      local cmp_hl = {
+      local override_hl = {
+
+        FloatBorder = { fg = C.grey_4 },
+        NormalFloat = { bg = C.bg },
+
         CmpItemAbbrMatch = { fg = C.blue, bold = true }, -- Highlight matching letters
-
         CmpItemKindKeyword = { fg = C.cyan, bg = C.none },
-
         CmpItemKindVariable = { fg = C.purple, bg = C.none },
         CmpItemKindConstant = { fg = C.purple, bg = C.none },
         CmpItemKindReference = { fg = C.purple, bg = C.none },
@@ -73,7 +73,7 @@ return {
         CmpItemKindSnippet = { fg = C.gray_5, bg = C.none },
       }
 
-      return vim.tbl_deep_extend("force", highlights, cmp_hl)
+      return vim.tbl_deep_extend("force", hl, override_hl)
     end,
   },
 

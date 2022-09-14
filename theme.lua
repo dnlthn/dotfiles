@@ -13,7 +13,7 @@ return {
     plugins = {
       aerial = true,
       beacon = false,
-      bufferline = true,
+      bufferline = false,
       dashboard = true,
       highlighturl = true,
       hop = false,
@@ -38,6 +38,7 @@ return {
     -- },
     default_theme = function(hl) -- or a function that returns a new table of colors to set
       local C = require "default_theme.colors"
+      C.buffer_visible_bg = "#1b1f26"
 
       local override_hl = {
         TelescopeBorder = { fg = C.grey_4, bg = C.bg },
@@ -78,6 +79,31 @@ return {
         CmpItemKindProperty = { fg = C.green, bg = C.none },
         CmpItemKindTypeParameter = { fg = C.green, bg = C.none },
         CmpItemKindSnippet = { fg = C.gray_5, bg = C.none },
+
+        BufferLinePick = { fg = C.red, bg = C.black },
+        BufferLinePickSelected = { fg = C.red, bg = C.bg },
+        BufferLinePickVisible = { fg = C.red, bg = C.buffer_visible_bg },
+        BufferLineFill = { fg = C.grey_9, bg = C.bg },
+        BufferLineBufferSelected = { fg = C.white, bg = C.bg, bold = true },
+        BufferLineTabClose = { fg = C.red_4, bg = C.bg },
+        BufferLineIndicatorSelected = { fg = C.red_4, bg = C.bg },
+        BufferLineCloseButtonSelected = { fg = C.red_4, bg = C.bg },
+        BufferLineModified = { fg = C.red_4, bg = C.black },
+        BufferLineError = { fg = C.red_1, bg = C.red_1 },
+        BufferLineErrorDiagnostic = { fg = C.red_1, bg = C.red_1 },
+        BufferLineBackground = { fg = C.grey_9, bg = C.black },
+        BufferLineTab = { fg = C.grey_9, bg = C.bg },
+        BufferLineTabSelected = { fg = C.fg, bg = C.bg },
+        BufferLineSeparator = { fg = C.bg, bg = C.black },
+        BufferLineSeparatorVisible = { fg = C.bg, bg = C.buffer_visible_bg },
+        BufferLineSeparatorSelected = { fg = C.grey_4, bg = C.bg },
+        BufferLineCloseButton = { fg = C.grey_9, bg = C.black },
+        BufferLineCloseButtonVisible = {
+          fg = C.grey_10,
+          bg = C.buffer_visible_bg,
+        },
+        BufferLineModifiedVisible = { fg = C.fg, bg = C.buffer_visible_bg },
+        BufferLineModifiedSelected = { fg = C.green_2, bg = C.bg },
       }
 
       return vim.tbl_deep_extend("force", hl, override_hl)

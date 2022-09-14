@@ -8,10 +8,7 @@ return {
   ["nacro90/numb.nvim"] = require "user.plugins.numb",
 
   -- Simple configs
+  { "folke/lua-dev.nvim" },
   { "B4mbus/oxocarbon-lua.nvim" },
   ["ziontee113/syntax-tree-surfer"] = { event = "BufRead" },
-
-  -- Temporary type fixes
-  -- { "folke/lua-dev.nvim" },
-  ["ranjithshegde/lua-dev.nvim"] = { branch = "fix-types" },
 }

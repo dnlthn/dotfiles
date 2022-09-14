@@ -8,7 +8,6 @@ return {
   ["nacro90/numb.nvim"] = require "user.plugins.numb",
 
   -- Simple configs
-  ["Maan2003/lsp_lines.nvim"] = { config = require("lsp_lines").setup },
   ["ziontee113/syntax-tree-surfer"] = { event = "BufRead" },
 
   -- Temporary type fixes

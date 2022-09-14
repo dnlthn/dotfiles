@@ -72,6 +72,26 @@ return {
       },
       -- quick save
       -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+      ["f"] = { "<cmd>HopChar1<cr>", desc = "Hop to letter" },
+      ["t"] = {
+        "<cmd>HopChar1CurrentLine<cr>",
+        desc = "Hop to letter on line",
+      },
+    },
+    o = {
+      ["f"] = { "<cmd>HopChar1<cr>", desc = "Hop to letter" },
+      ["t"] = {
+        "<cmd>HopChar1CurrentLine<cr>",
+        desc = "Hop to letter on line",
+      },
+    },
+    v = {
+      ["f"] = { "<cmd>HopChar1<cr>", desc = "Hop to letter" },
+      ["t"] = {
+        "<cmd>HopChar1CurrentLine<cr>",
+        desc = "Hop to letter on line",
+      },
     },
     t = {
       -- setting a mapping to false will disable it

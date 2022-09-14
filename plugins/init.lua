@@ -5,6 +5,7 @@ return {
   ["mrshmllow/document-color.nvim"] = require "user.plugins.document-color",
   ["ray-x/lsp_signature.nvim"] = require "user.plugins.lsp_signature",
   ["phaazon/hop.nvim"] = require "user.plugins.hop",
+  ["nacro90/numb.nvim"] = require "user.plugins.numb",
 
   ["ziontee113/syntax-tree-surfer"] = { event = "BufRead" },
 

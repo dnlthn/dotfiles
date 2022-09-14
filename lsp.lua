@@ -28,6 +28,13 @@ return {
         -- ["<leader>lf"] = false -- disable formatting keymap
       },
     },
+    -- add to the global LSP on_attach function
+    on_attach = function(client, bufnr)
+      if client.server_capabilities.colorProvider then
+        -- Attach document colour support
+        require("document-color").buf_attach(bufnr)
+      end
+    end,
 
     -- override the mason server-registration function
     server_registration = function(server, opts)
@@ -37,6 +44,14 @@ return {
 
       require("lspconfig")[server].setup(opts)
     end,
+
+    capabilities = {
+      textDocument = {
+        colorProvider = {
+          dynamicRegistration = true,
+        },
+      },
+    },
 
     -- Add overrides for LSP server settings, the keys are the name of the server
     ["server-settings"] = {

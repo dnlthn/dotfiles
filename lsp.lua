@@ -15,6 +15,9 @@ return {
   },
 
   config = {
+    skip_setup = {
+      "tsserver",
+    },
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"

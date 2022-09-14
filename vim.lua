@@ -33,9 +33,9 @@ return {
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
     vim.api.nvim_create_autocmd("BufWritePost", {
-      desc = "Sync packer after modifying plugins.lua",
+      desc = "Sync packer after modifying plugins/init",
       group = "packer_conf",
-      pattern = "plugins.lua",
+      pattern = "*/plugins/init.lua",
       command = "source <afile> | PackerSync",
     })
 

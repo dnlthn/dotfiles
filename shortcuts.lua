@@ -18,6 +18,46 @@ return {
   mappings = {
     -- first key is the mode
     n = {
+      ["sn"] = {
+        function()
+          require("syntax-tree-surfer").surf("normal", "next", true)
+        end,
+        desc = "swap next",
+      },
+
+      ["sp"] = {
+        function()
+          require("syntax-tree-surfer").surf("prev", "normal", true)
+        end,
+        desc = "swap previous",
+      },
+
+      ["sd"] = {
+        function()
+          require("syntax-tree-surfer").move("n", false)
+        end,
+        desc = "swap down",
+      },
+
+      ["su"] = {
+        function()
+          require("syntax-tree-surfer").move("n", true)
+        end,
+        desc = "swap up",
+      },
+      ["so"] = {
+        function()
+          require("syntax-tree-surfer").select()
+        end,
+        desc = "select outer",
+      },
+      ["si"] = {
+        function()
+          require("syntax-tree-surfer").select_current_node()
+        end,
+        desc = "select inner",
+      },
+
       -- second key is the lefthand side of the map
       -- mappings seen under group name "Buffer"
       ["<leader>bb"] = { "<cmd>tabnew<cr>", desc = "New tab" },

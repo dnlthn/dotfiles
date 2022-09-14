@@ -5,6 +5,8 @@ return {
   ["mrshmllow/document-color.nvim"] = require "user.plugins.document-color",
   ["ray-x/lsp_signature.nvim"] = require "user.plugins.lsp_signature",
 
-  { "folke/lua-dev.nvim" },
 
+  -- Temporary type fixes
+  -- { "folke/lua-dev.nvim" },
+  ["ranjithshegde/lua-dev.nvim"] = { branch = "fix-types" },
 }

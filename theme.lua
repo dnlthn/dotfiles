@@ -1,5 +1,5 @@
 return {
-  colorscheme = "default_theme",
+  colorscheme = "oxocarbon-lua",
 
   default_theme = {
     -- set the highlight style for diagnostic messages
@@ -36,6 +36,32 @@ return {
     -- duskfox = { -- a table of overrides/changes to the default
     --   Normal = { bg = "#000000" },
     -- },
+    ["oxocarbon-lua"] = function(hl)
+      local colors = {
+        bg = "#161616",
+        cursor = "#262626",
+        light_teal = "#3ddbd9",
+        light_blue = "#82cfff",
+      }
+
+      local override_hl = {
+        BufferLineFill = { bg = colors.bg },
+        BufferLineTabClose = { fg = colors.light_blue, bg = colors.bg },
+        BufferLineBufferSelected = { bold = true },
+        BufferLineIndicatorSelected = { fg = colors.light_teal },
+
+        FloatBorder = { fg = colors.cursor, bg = colors.bg },
+        NormalFloat = { bg = colors.bg },
+        CmpItemAbbrMatch = { fg = colors.light_teal, bold = true },
+
+        TelescopeBorder = { fg = colors.cursor },
+        TelescopePreviewBorder = { fg = colors.cursor },
+        TelescopePromptBorder = { fg = colors.cursor },
+        TelescopeResultsBorder = { fg = colors.cursor },
+      }
+      return vim.tbl_deep_extend("force", hl, override_hl)
+    end,
+
     default_theme = function(hl) -- or a function that returns a new table of colors to set
       local C = require "default_theme.colors"
       C.buffer_visible_bg = "#1b1f26"

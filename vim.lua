@@ -22,6 +22,7 @@ return {
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
+      oxocarbon_lua_alternative_telescope = true,
     },
   },
 

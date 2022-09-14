@@ -1,5 +1,23 @@
 return { -- overrides `require("treesitter").setup(...)`
   ensure_installed = {
     "lua",
+    "elixir",
+    "eex",
+    "heex",
+    "astro",
+    "fish",
+    "go",
+    "gomod",
+    "graphql",
+    "html",
+    "javascript",
+    "prisma",
+    "ruby",
+    "rust",
+    "sql",
+    "svelte",
+    "typescript",
+    "tsx",
+    "json",
   },
 }

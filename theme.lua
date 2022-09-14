@@ -40,6 +40,18 @@ return {
       local C = require "default_theme.colors"
 
       local override_hl = {
+        TelescopeBorder = { fg = C.grey_4, bg = C.bg },
+        TelescopeNormal = { bg = C.bg },
+        TelescopePreviewBorder = { fg = C.grey_4, bg = C.bg },
+        TelescopePreviewNormal = { bg = C.bg },
+        TelescopePreviewTitle = { fg = C.bg, bg = C.green },
+        TelescopePromptBorder = { fg = C.grey_4, bg = C.bg },
+        TelescopePromptNormal = { fg = C.fg, bg = C.bg },
+        TelescopePromptPrefix = { fg = C.red, bg = C.bg },
+        TelescopePromptTitle = { fg = C.bg, bg = C.red },
+        TelescopeResultsBorder = { fg = C.grey_4, bg = C.bg },
+        TelescopeResultsNormal = { bg = C.bg },
+        TelescopeResultsTitle = { fg = C.bg, bg = C.grey_4 },
 
         FloatBorder = { fg = C.grey_4 },
         NormalFloat = { bg = C.bg },
@@ -50,26 +62,21 @@ return {
         CmpItemKindConstant = { fg = C.purple, bg = C.none },
         CmpItemKindReference = { fg = C.purple, bg = C.none },
         CmpItemKindValue = { fg = C.purple, bg = C.none },
-
         CmpItemKindFunction = { fg = C.blue, bg = C.none },
         CmpItemKindMethod = { fg = C.blue, bg = C.none },
         CmpItemKindConstructor = { fg = C.blue, bg = C.none },
-
         CmpItemKindClass = { fg = C.orange_1, bg = C.none },
         CmpItemKindEnum = { fg = C.orange_1, bg = C.none },
         CmpItemKindEvent = { fg = C.orange_1, bg = C.none },
         CmpItemKindInterface = { fg = C.orange_1, bg = C.none },
         CmpItemKindStruct = { fg = C.orange_1, bg = C.none },
         CmpItemKindUnit = { fg = C.orange_1, bg = C.none },
-
         CmpItemKindModule = { fg = C.yellow, bg = C.none },
-
         CmpItemKindEnumMember = { fg = C.green, bg = C.none },
         CmpItemKindField = { fg = C.green, bg = C.none },
         CmpItemKindOperator = { fg = C.green, bg = C.none },
         CmpItemKindProperty = { fg = C.green, bg = C.none },
         CmpItemKindTypeParameter = { fg = C.green, bg = C.none },
-
         CmpItemKindSnippet = { fg = C.gray_5, bg = C.none },
       }
 

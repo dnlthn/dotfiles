@@ -1,7 +1,6 @@
 return {
   config = function()
     local overrides = {}
-
     local defaults = {
       enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
       max_lines = 0, -- How many lines the window should span. Values <= 0 mean no limit.

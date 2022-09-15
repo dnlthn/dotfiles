@@ -37,7 +37,7 @@ return {
       desc = "Sync packer after modifying plugins/init",
       group = "packer_conf",
       pattern = "*/plugins/init.lua",
-      command = "source <afile> | PackerSync",
+      command = "AstroReload",
     })
 
     -- Set up custom filetypes

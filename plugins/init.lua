@@ -8,6 +8,7 @@ return {
   ["nacro90/numb.nvim"] = require "user.plugins.numb",
   ["nvim-treesitter/nvim-treesitter-context"] = require "user.plugins.nvim-treesitter-context",
   ["nvim-treesitter/nvim-treesitter-textobjects"] = require "user.plugins.nvim-treesitter-textobjects",
+  ["RRethy/nvim-treesitter-textsubjects"] = require "user.plugins.nvim-treesitter-textsubjects",
   ["tzachar/cmp-tabnine"] = require "user.plugins.cmp-tabnine",
 
   -- Simple configs

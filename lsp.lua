@@ -14,7 +14,7 @@ return {
     },
   },
 
-  config = {
+  lsp_config = {
     skip_setup = {
       "tsserver",
     },

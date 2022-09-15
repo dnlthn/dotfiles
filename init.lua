@@ -11,7 +11,7 @@ local config = {
   highlights = require("user.theme").highlights,
 
   cmp = require("user.lsp").cmp,
-  lsp = require("user.lsp").config,
+  lsp = require("user.lsp").lsp_config,
 
   ["which-key"] = require("user.shortcuts").which_key,
   luasnip = require("user.shortcuts").luasnip,

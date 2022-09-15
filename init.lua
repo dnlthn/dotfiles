@@ -7,7 +7,6 @@ local config = {
 
   colorscheme = require("user.theme").colorscheme,
   default_theme = require("user.theme").default_theme,
-  header = require("user.theme").header,
   highlights = require("user.theme").highlights,
 
   cmp = require("user.lsp").cmp,

@@ -58,6 +58,8 @@ return {
         TelescopePreviewBorder = { fg = colors.cursor },
         TelescopePromptBorder = { fg = colors.cursor },
         TelescopeResultsBorder = { fg = colors.cursor },
+
+        NotifyInfoBorder = { fg = colors.cursor },
       }
       return vim.tbl_deep_extend("force", hl, override_hl)
     end,

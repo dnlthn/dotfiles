@@ -1,5 +1,6 @@
 local _, cmp = pcall(require, "cmp")
 local _, lspkind = pcall(require, "lspkind")
+local compare = require "cmp.config.compare"
 
 return {
   formatting = {
@@ -12,8 +13,21 @@ return {
         nvim_lua = "(lua)",
         latex_symbols = "(latex)",
       },
+  sorting = {
+    comparators = {
+      compare.locality,
+      compare.recently_used,
+      compare.score,
+      compare.exact,
+      compare.offset,
+      -- compare.scopes,
+      compare.kind,
+      compare.sort_text,
+      compare.length,
+      compare.order,
     },
   },
+
   window = {
     completion = cmp.config.window.bordered {
       border = "single",

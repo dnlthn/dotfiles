@@ -7,6 +7,7 @@ return {
   ["phaazon/hop.nvim"] = require "user.plugins.hop",
   ["nacro90/numb.nvim"] = require "user.plugins.numb",
   ["nvim-treesitter/nvim-treesitter-context"] = require "user.plugins.nvim-treesitter-context",
+  ["tzachar/cmp-tabnine"] = require "user.plugins.cmp-tabnine",
 
   -- Simple configs
   { "folke/lua-dev.nvim" },

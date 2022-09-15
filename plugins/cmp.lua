@@ -5,16 +5,23 @@ local compare = require "cmp.config.compare"
 return {
   formatting = {
     fields = { "abbr", "kind", "menu" },
-    format = lspkind.cmp_format {
-      menu = {
-        buffer = "(buffer)",
-        nvim_lsp = "(lsp)",
-        luasnip = "(luasnip)",
-        nvim_lua = "(lua)",
-        latex_symbols = "(latex)",
-      },
+    format = function(entry, vim_item)
+      if entry.source.name == "cmp_tabnine" then
+        vim_item.kind = " Tabnine"
+        return vim_item
+      elseif entry.source.name == "buffer" then
+        vim_item.kind = "﬘ Buffer"
+        return vim_item
+      end
+
+      return lspkind.cmp_format {
+      }(entry, vim_item)
+    end,
+  },
+
   sorting = {
     comparators = {
+      require "cmp_tabnine.compare",
       compare.locality,
       compare.recently_used,
       compare.score,

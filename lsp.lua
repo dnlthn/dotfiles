@@ -7,7 +7,7 @@ return {
   -- true == 1000
   cmp = {
     source_priority = {
-      nvim_lsp = 1000,
+      nvim_lsp = 900,
       luasnip = 750,
       path = 250,
       buffer = false,

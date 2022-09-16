@@ -54,8 +54,9 @@ return {
 
         FloatBorder = { fg = colors.cursor, bg = colors.bg },
         NormalFloat = { bg = colors.bg },
-        CmpItemAbbrMatch = { fg = colors.light_teal, bold = true },
+        CmpItemAbbrMatch = { fg = colors.dark_pink, bold = true },
 
+        TelescopeMatching = { fg = colors.dark_pink, bold = true },
         TelescopeBorder = { fg = colors.cursor },
         TelescopePreviewBorder = { fg = colors.cursor },
         TelescopePromptBorder = { fg = colors.cursor },

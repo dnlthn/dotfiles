@@ -40,7 +40,9 @@ return {
       local colors = {
         bg = "#161616",
         cursor = "#262626",
+        comment = "#525252", -- 4
         light_teal = "#3ddbd9",
+        dark_pink = "#ee5396", -- 11
         light_blue = "#82cfff",
       }
 
@@ -60,6 +62,11 @@ return {
         TelescopeResultsBorder = { fg = colors.cursor },
 
         NotifyInfoBorder = { fg = colors.cursor },
+
+        HopNextKey = { fg = colors.bg, bg = colors.dark_pink, bold = true },
+        HopNextKey1 = { fg = colors.light_teal, bold = true },
+        HopNextKey2 = { fg = colors.light_teal, bold = true },
+        HopUnmatched = { fg = colors.comment, bg = colors.bg },
       }
       return vim.tbl_deep_extend("force", hl, override_hl)
     end,

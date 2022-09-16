@@ -41,22 +41,22 @@ return {
         bg = "#161616",
         cursor = "#262626",
         comment = "#525252", -- 4
-        light_teal = "#3ddbd9",
-        dark_pink = "#ee5396", -- 11
-        light_blue = "#82cfff",
+        turquoise = "#3ddbd9",
+        pink = "#ee5396", -- 11
+        blue = "#82cfff",
       }
 
       local override_hl = {
         BufferLineFill = { bg = colors.bg },
-        BufferLineTabClose = { fg = colors.light_blue, bg = colors.bg },
+        BufferLineTabClose = { fg = colors.blue, bg = colors.bg },
         BufferLineBufferSelected = { bold = true },
-        BufferLineIndicatorSelected = { fg = colors.light_teal },
+        BufferLineIndicatorSelected = { fg = colors.turquoise },
 
         FloatBorder = { fg = colors.cursor, bg = colors.bg },
         NormalFloat = { bg = colors.bg },
-        CmpItemAbbrMatch = { fg = colors.dark_pink, bold = true },
+        CmpItemAbbrMatch = { fg = colors.pink, bold = true },
 
-        TelescopeMatching = { fg = colors.dark_pink, bold = true },
+        TelescopeMatching = { fg = colors.pink, bold = true },
         TelescopeBorder = { fg = colors.cursor },
         TelescopePreviewBorder = { fg = colors.cursor },
         TelescopePromptBorder = { fg = colors.cursor },
@@ -64,9 +64,9 @@ return {
 
         NotifyInfoBorder = { fg = colors.cursor },
 
-        HopNextKey = { fg = colors.bg, bg = colors.dark_pink, bold = true },
-        HopNextKey1 = { fg = colors.light_teal, bold = true },
-        HopNextKey2 = { fg = colors.light_teal, bold = true },
+        HopNextKey = { fg = colors.bg, bg = colors.pink, bold = true },
+        HopNextKey1 = { fg = colors.turquoise, bold = true },
+        HopNextKey2 = { fg = colors.turquoise, bold = true },
         HopUnmatched = { fg = colors.comment, bg = colors.bg },
 
         LspReferenceRead = { bg = "none", underline = true },

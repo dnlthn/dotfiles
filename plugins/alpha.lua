@@ -46,6 +46,7 @@ return {
         button("w", "  Find Word", "<cmd> Telescope live_grep <cr>"),
         button("s", "  Last Session", "<cmd>SessionManager! load_last_session<cr>"),
         button("u", "  Update Plugins", "<cmd> PackerSync <cr>"),
+        button("q", "  Quit", "<cmd> q <cr>"),
       },
       opts = { spacing = 1 },
     },

@@ -68,6 +68,10 @@ return {
         HopNextKey1 = { fg = colors.light_teal, bold = true },
         HopNextKey2 = { fg = colors.light_teal, bold = true },
         HopUnmatched = { fg = colors.comment, bg = colors.bg },
+
+        LspReferenceRead = { bg = "none", underline = true },
+        LspReferenceText = { bg = "none", underline = true },
+        LspReferenceWrite = { bg = "none", underline = true },
       }
       return vim.tbl_deep_extend("force", hl, override_hl)
     end,
@@ -140,6 +144,10 @@ return {
         },
         BufferLineModifiedVisible = { fg = C.fg, bg = C.buffer_visible_bg },
         BufferLineModifiedSelected = { fg = C.green_2, bg = C.bg },
+
+        LspReferenceRead = { bg = "none", underline = true },
+        LspReferenceText = { bg = "none", underline = true },
+        LspReferenceWrite = { bg = "none", underline = true },
       }
 
       return vim.tbl_deep_extend("force", hl, override_hl)

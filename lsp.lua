@@ -29,12 +29,7 @@ return {
       },
     },
     -- add to the global LSP on_attach function
-    on_attach = function(client, bufnr)
-      if client.server_capabilities.colorProvider then
-        -- Attach document colour support
-        require("document-color").buf_attach(bufnr)
-      end
-    end,
+    -- on_attach = function(client, bufnr) end,
 
     -- override the mason server-registration function
     server_registration = function(server, opts)

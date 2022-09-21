@@ -75,6 +75,14 @@ return {
 
         CopilotSuggestion = { fg = colors.comment, underline = true },
         CopilotAnnotation = { bg = "none", fg = colors.turquoise, bold = true },
+
+        rainbowcol1 = { fg = colors.comment },
+        rainbowcol2 = { fg = "#666666" },
+        rainbowcol3 = { fg = "#7b7b7b" },
+        rainbowcol4 = { fg = "#8f8f8f" },
+        rainbowcol5 = { fg = colors.green },
+        rainbowcol6 = { fg = colors.turquoise },
+        rainbowcol7 = { fg = colors.pink },
       }
 
       return vim.tbl_deep_extend("force", hl, override_hl)

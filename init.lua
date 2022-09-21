@@ -14,7 +14,7 @@ local config = {
 
   ["which-key"] = require("user.shortcuts").which_key,
   luasnip = require("user.shortcuts").luasnip,
-  mappings = require("user.shortcuts").mappings,
+  mappings = require "user.mappings",
 }
 
 return config

@@ -10,6 +10,7 @@ return {
   ["RRethy/nvim-treesitter-textsubjects"] = require "user.plugins.nvim-treesitter-textsubjects",
   ["tzachar/cmp-tabnine"] = require "user.plugins.cmp-tabnine",
   ["github/copilot.vim"] = require "user.plugins.copilot",
+  ["beauwilliams/focus.nvim"] = require "user.plugins.focus",
 
   -- Simple configs
   { "folke/lua-dev.nvim" },

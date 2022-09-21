@@ -7,6 +7,7 @@ for _, module in ipairs {
   "syntax-tree-surfer",
   "telescope",
   "copilot",
+  "focus",
 } do
   mappings = vim.tbl_deep_extend("force", mappings, require("mappings." .. module))
 end

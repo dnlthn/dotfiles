@@ -72,7 +72,11 @@ return {
         LspReferenceRead = { bg = "none", underline = true },
         LspReferenceText = { bg = "none", underline = true },
         LspReferenceWrite = { bg = "none", underline = true },
+
+        CopilotSuggestion = { fg = colors.comment, underline = true },
+        CopilotAnnotation = { bg = "none", fg = colors.turquoise, bold = true },
       }
+
       return vim.tbl_deep_extend("force", hl, override_hl)
     end,
 

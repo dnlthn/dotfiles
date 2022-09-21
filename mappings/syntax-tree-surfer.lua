@@ -30,24 +30,17 @@ return {
   },
 
   v = {
-    ["h"] = {
+    ["H"] = {
       function() require("syntax-tree-surfer").surf("parent", "visual") end,
     },
-    ["j"] = {
+    ["J"] = {
       function() require("syntax-tree-surfer").surf("next", "visual") end,
     },
-    ["k"] = {
+    ["K"] = {
       function() require("syntax-tree-surfer").surf("prev", "visual") end,
     },
-    ["l"] = {
+    ["L"] = {
       function() require("syntax-tree-surfer").surf("child", "visual") end,
-    },
-
-    ["<A-j>"] = {
-      function() require("syntax-tree-surfer").surf("next", "visual", true) end,
-    },
-    ["<A-k>"] = {
-      function() require("syntax-tree-surfer").surf("prev", "visual", true) end,
     },
   },
 }

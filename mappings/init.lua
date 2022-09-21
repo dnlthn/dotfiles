@@ -5,6 +5,7 @@ for _, module in ipairs {
   "bufferline",
   "hop",
   "syntax-tree-surfer",
+  "telescope",
 } do
   mappings = vim.tbl_deep_extend("force", mappings, require("mappings." .. module))
 end

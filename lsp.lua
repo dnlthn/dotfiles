@@ -26,6 +26,7 @@ return {
     mappings = {
       n = {
         -- ["<leader>lf"] = false -- disable formatting keymap
+        ["gr"] = false,
       },
     },
     -- add to the global LSP on_attach function

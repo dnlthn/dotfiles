@@ -9,7 +9,7 @@ for _, module in ipairs {
   "copilot",
   "focus",
 } do
-  mappings = vim.tbl_deep_extend("force", mappings, require("mappings." .. module))
+  mappings = vim.tbl_deep_extend("force", mappings, require("user.mappings." .. module))
 end
 
 return mappings

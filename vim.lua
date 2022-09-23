@@ -19,6 +19,7 @@ return {
   options = {
     opt = {
       relativenumber = true, -- sets vim.opt.relativenumber
+      wrap = true,
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader

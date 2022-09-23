@@ -1,5 +1,6 @@
 local _, cmp = pcall(require, "cmp")
 local _, lspkind = pcall(require, "lspkind")
+local cmp_window = require "cmp.utils.window"
 local compare = require "cmp.config.compare"
 local _, luasnip = pcall(require, "luasnip")
 
@@ -7,6 +8,14 @@ local function has_words_before()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
   return col ~= 0
     and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match "%s" == nil
+end
+
+-- Hide scrollbar
+cmp_window.info_ = cmp_window.info
+cmp_window.info = function(self)
+  local info = self:info_()
+  info.scrollable = false
+  return info
 end
 
 return {
@@ -22,6 +31,14 @@ return {
       end
 
       return lspkind.cmp_format {
+        menu = {
+          cmp_tabnine = "(TabNine)",
+          buffer = "(buffer)",
+          nvim_lsp = "(lsp)",
+          luasnip = "(luasnip)",
+          nvim_lua = "(lua)",
+          latex_symbols = "(latex)",
+        },
       }(entry, vim_item)
     end,
   },
@@ -60,6 +77,13 @@ return {
     ["<C-p>"] = cmp.mapping {
       i = cmp.mapping.abort(),
     },
+    ["<C-j>"] = cmp.mapping {
+      i = cmp.mapping.abort(),
+    },
+    ["<C-k>"] = cmp.mapping {
+      i = cmp.mapping.abort(),
+    },
+
     ["<Tab>"] = cmp.mapping(function(fallback)
       local copilot_keys = vim.fn["copilot#Accept"]()
 

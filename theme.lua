@@ -1,4 +1,5 @@
 return {
+  -- colorscheme = "default_theme",
   colorscheme = "oxocarbon-lua",
 
   default_theme = {
@@ -40,15 +41,33 @@ return {
       local colors = {
         bg = "#161616",
         cursor = "#262626",
+        -- onyx = "#393939", -- 3
         comment = "#525252", -- 4
+        -- "#dde1e6", -- 5
+        -- light_grey = "#f2f4f8", -- 6
+        -- "#ffffff", -- 7
+        -- teal = "#08bdba", -- 8
+        -- turquoise = "#3ddbd9",
         turquoise = "#3ddbd9",
+        -- "#78a9ff", -- 10
+        -- raspberry = "#ee5396", -- 11
         pink = "#ee5396", -- 11
+        -- blue = "#33b1ff", -- 12
+        -- pink = "#ff7eb6", -- 13
+        green = "#42be65", -- 14
+        purple = "#be95ff", -- 15
+        -- sky_blue = "#82cfff",
         blue = "#82cfff",
+        -- "#131313", -- 17
+        -- "", -- 18
+        -- "#a2a9b0", -- 19
+        -- "#adadad", -- 20
       }
 
       local override_hl = {
         BufferLineFill = { bg = colors.bg },
         BufferLineTabClose = { fg = colors.blue, bg = colors.bg },
+
         BufferLineBufferSelected = { bold = true },
         BufferLineIndicatorSelected = { fg = colors.turquoise },
 
@@ -76,6 +95,8 @@ return {
         CopilotSuggestion = { fg = colors.comment, underline = true },
         CopilotAnnotation = { bg = "none", fg = colors.turquoise, bold = true },
 
+        -- Shades built from comment
+        -- Goal is for them "be in the background" but warn with colors when its too deep
         rainbowcol1 = { fg = colors.comment },
         rainbowcol2 = { fg = "#666666" },
         rainbowcol3 = { fg = "#7b7b7b" },
@@ -83,6 +104,12 @@ return {
         rainbowcol5 = { fg = colors.green },
         rainbowcol6 = { fg = colors.turquoise },
         rainbowcol7 = { fg = colors.pink },
+
+        WhichKey = { fg = colors.purple, bold = true },
+        WhichKeyGroup = { fg = colors.comment, bold = true },
+        WhichKeyDesc = { fg = "#666666" },
+
+        TSPunctDelimiter = { fg = colors.comment },
       }
 
       return vim.tbl_deep_extend("force", hl, override_hl)

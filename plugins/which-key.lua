@@ -1,9 +1,24 @@
 local overrides = {
+  layout = {
+    align = "center",
+  },
+  plugins = {
+    presets = {
+      operators = false,
+      text_objects = false,
+      motions = false,
+      windows = false,
+      nav = false,
+      z = false,
+      g = false,
+    },
+  },
   spelling = {
     enabled = true,
   },
   icons = {
     separator = "",
+    group = " ",
   },
   window = {
     border = "single",

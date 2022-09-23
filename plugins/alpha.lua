@@ -47,6 +47,8 @@ return {
         button("s", "  Last Session", "<cmd>SessionManager! load_last_session<cr>"),
         button("u", "  Update Plugins", "<cmd> PackerSync <cr>"),
         button("q", "  Quit", "<cmd> q <cr>"),
+        -- harpoon
+        -- projects
       },
       opts = { spacing = 1 },
     },

@@ -1,5 +1,19 @@
+local surf = require "syntax-tree-surfer"
+local shared = require "nvim-treesitter.textobjects.shared"
+
 return {
   n = {
+    ["<leader>v"] = {
+      function()
+        -- query_strings = shared.make_query_strings_table "function"
+        -- print(query_strings)
+        -- print query_strings table as 1 string
+        -- print(vim.inspect(query_strings))
+        surf.targeted_jump { "function" }
+        -- surf.targeted_jump(query_strings)
+      end,
+      desc = "Surf to variables",
+    },
     ["sn"] = {
       function() require("syntax-tree-surfer").surf("normal", "next", true) end,
       desc = "swap next",

@@ -5,7 +5,7 @@ return {
     local tabnine = require "cmp_tabnine.config"
 
     local overrides = {
-      max_num_results = 2,
+      max_num_results = 1,
     }
 
     local defaults = {
@@ -23,6 +23,6 @@ return {
     }
 
     tabnine.setup(vim.tbl_deep_extend("force", defaults, overrides))
-    astronvim.add_cmp_source { name = "cmp_tabnine", priority = 1000, max_item_count = 2 }
+    astronvim.add_cmp_source { name = "cmp_tabnine", priority = 950, max_item_count = 1 }
   end,
 }

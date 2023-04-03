@@ -12,5 +12,14 @@ return {
       end,
       desc = "Search references",
     },
+    ["<C-n>"] = {
+      function()
+        vim.cmd('FocusSplitNicely')
+        require("telescope.builtin").find_files({})
+      end, desc = "Open file in new split"
+    },
+    ["<leader><leader>"] = {
+      "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown {previewer=false,initial_mode='normal'})<cr>", desc =
+    "  buffers" },
   },
 }

@@ -4,9 +4,9 @@ for _, module in ipairs {
   "base",
   "bufferline",
   "hop",
-  "syntax-tree-surfer",
+  -- "syntax-tree-surfer",
   "telescope",
-  "copilot",
+  -- "copilot",
   "focus",
 } do
   mappings = vim.tbl_deep_extend("force", mappings, require("user.mappings." .. module))

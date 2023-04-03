@@ -18,7 +18,8 @@ local overrides = {
   },
   icons = {
     separator = "",
-    group = " ",
+    group = "",
+    -- group = " ",
   },
   window = {
     border = "single",

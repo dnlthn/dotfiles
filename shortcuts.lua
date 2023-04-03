@@ -8,7 +8,6 @@ return {
       javascript = { "javascriptreact" },
     },
   },
-
   -- Goal bindings
   -- b = buffer
   -- f = find
@@ -42,21 +41,21 @@ return {
   --
   which_key = {
     -- Add bindings which show up as group name
-    register_mappings = {
+    register = {
       -- first key is the mode, n == normal mode
       n = {
         -- second key is the prefix, <leader> prefixes
         ["<leader>"] = {
           -- third key is the key to bring up next level and its displayed
           -- group name in which-key top level menu
-          b = { name = " buffer" },
-          f = { name = " find" },
-          g = { name = " git" },
-          l = { name = " code" },
-          S = { name = " session" },
-          t = { name = " terminal" },
-          p = { name = " packer" },
-          s = { name = " search" },
+          b = { name = "  buffer" },
+          f = { name = "  find" },
+          g = { name = "  git" },
+          l = { name = "  code" },
+          S = { name = "  session" },
+          t = { name = "  terminal" },
+          p = { name = "  packer" },
+          s = { name = "  search" },
         },
       },
     },

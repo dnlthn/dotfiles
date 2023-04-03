@@ -7,14 +7,19 @@ return {
   -- true == 1000
   cmp = {
     source_priority = {
+      -- copilot = 1000,
       nvim_lsp = 900,
-      luasnip = 750,
+      -- luasnip = 750,
       path = 250,
-      buffer = false,
+      -- luasnip = false,
+      -- buffer = false,
     },
   },
-
   lsp_config = {
+    formatting = {
+      -- control auto formatting on save
+      timeout_ms = 5000, -- default format timeout
+    },
     skip_setup = {
       "tsserver",
     },
@@ -34,9 +39,9 @@ return {
 
     -- override the mason server-registration function
     server_registration = function(server, opts)
-      if server == "sumneko_lua" then
-        opts = vim.tbl_deep_extend("force", opts, require("lua-dev").setup())
-      end
+      -- if server == "sumneko_lua" then
+      -- -- opts = vim.tbl_deep_extend("force", opts, require("lua-dev").setup())
+      -- end
 
       require("lspconfig")[server].setup(opts)
     end,
@@ -51,6 +56,20 @@ return {
 
     -- Add overrides for LSP server settings, the keys are the name of the server
     ["server-settings"] = {
+      sumneko_lua = function(config)
+        return astronvim.default_tbl({
+          settings = {
+            Lua = {
+              workspace = {
+                library = {
+                  require("neodev.config").types(),
+                },
+                checkThirdParty = true,
+              },
+            },
+          },
+        }, config)
+      end,
       -- example for addings schemas to yamlls
       -- yamlls = { -- override table for require("lspconfig").yamlls.setup({...})
       --   settings = {

@@ -36,6 +36,7 @@ export-glyph-names = true
     l = "tailed"
     m = "short-leg-top-left-serifed"
     n = "straight-top-left-serifed"
+    p = "motion-serifed"
     q = "earless-corner-tailed"
     r = "serifless"
     s = "serifless"
@@ -80,11 +81,6 @@ export-glyph-names = true
   [buildPlans.recursivka-mono.ligations]
   inherits = "javascript"
 
-[buildPlans.recursivka-mono.widths.normal]
-shape = 600
-menu = 5
-css = "normal"
-
 [buildPlans.recursivka]
 family = "Recursivka"
 spacing = "quasi-proportional"
@@ -123,6 +119,7 @@ export-glyph-names = true
     l = "tailed"
     m = "short-leg-top-left-serifed"
     n = "straight-top-left-serifed"
+    p = "motion-serifed"
     q = "earless-corner-tailed"
     r = "serifless"
     s = "serifless"
@@ -166,8 +163,3 @@ export-glyph-names = true
 
   [buildPlans.recursivka.ligations]
   inherits = "javascript"
-
-[buildPlans.recursivka.widths.normal]
-shape = 600
-menu = 5
-css = "normal"

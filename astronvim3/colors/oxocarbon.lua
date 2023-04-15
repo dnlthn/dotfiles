@@ -1,0 +1,15 @@
+return {
+  bg = "#161616",
+  cursor = "#202020",
+  onyx = "#393939",
+  comment = "#525252",
+  lighter_comment = "#727272",
+  turquoise = "#3ddbd9",
+  pink = "#ee5396",
+  green = "#42be65",
+  purple = "#be95ff",
+  error = "#db4b4b",
+  warning = "#e0af68",
+  info = "#0db9d7",
+  hint = "#1abc9c",
+}

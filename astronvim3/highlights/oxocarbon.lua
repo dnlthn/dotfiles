@@ -98,6 +98,13 @@ return {
 	CopilotAnnotation = { bg = "none", fg = colors.turquoise, bold = true },
 	-- Dim the delimitters
 	["@punctuation.delimiter"] = { fg = colors.lighter_comment },
+	TSRainbowRed = { fg = colors.comment },
+	TSRainbowYellow = { fg = "#666666" },
+	TSRainbowBlue = { fg = "#7b7b7b" },
+	TSRainbowOrange = { fg = "#8f8f8f" },
+	TSRainbowGreen = { fg = colors.green },
+	TSRainbowViolet = { fg = colors.turquoise },
+	TSRainbowCyan = { fg = colors.pink },
 	-- Telescope
 	TelescopeSelection = { bg = colors.cursor },
 	TelescopeMatching = { fg = colors.green, bold = true },

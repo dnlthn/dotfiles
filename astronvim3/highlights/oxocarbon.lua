@@ -131,4 +131,9 @@ return {
 	["@lsp.typemod.string.injected"] = { link = "@string" },
 	["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
 	["@lsp.typemod.variable.injected"] = { link = "@variable" },
+	-- Dashboard
+	DashboardHeader = { fg = colors.comment },
+	DashboardCenter = { fg = colors.turquoise },
+	DashboardShortcut = { fg = colors.comment, bg = "#262626" },
+	DashboardFooter = { fg = colors.comment },
 }

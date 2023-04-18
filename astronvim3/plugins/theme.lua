@@ -63,4 +63,21 @@ return {
       }
     end,
   },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      layout = {
+        align = "center",
+      },
+      spelling = {
+        enabled = true,
+      },
+      icons = {
+        separator = "",
+      },
+      window = {
+        border = "single",
+      },
+    },
+  },
 }

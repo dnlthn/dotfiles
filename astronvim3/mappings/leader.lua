@@ -46,5 +46,14 @@ return with_leader {
       end,
       desc = "󰓩  Last buffer",
     },
+    ["a"] = {
+      function() require("harpoon.mark").add_file() end,
+      desc = "󰛢  Harpoon",
+    },
+    ["<space>"] = {
+      function() require("harpoon.ui").toggle_quick_menu() end,
+      desc = "󰛢  Swap harpoons",
+    },
+    ["fh"] = { "<cmd> Telescope harpoon marks <cr>", desc = "󰛢  Find harpoons" },
   },
 }

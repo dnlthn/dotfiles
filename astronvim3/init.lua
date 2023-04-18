@@ -1,3 +1,4 @@
 return {
-	colorscheme = "oxocarbon",
+  colorscheme = "oxocarbon",
+  mappings = require "user.mappings",
 }

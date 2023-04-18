@@ -1,14 +1,11 @@
 M = {}
+
 -- Credit to @folke for rgb blends
 -- https://github.com/folke/tokyonight.nvim/blob/8b55a47165348dd1d811f9e1f867bb17bb35a360/lua/tokyonight/util.lua#L10-L33
 ----@param c  string
 M.hexToRgb = function(c)
   c = string.lower(c)
-  return {
-    tonumber(c:sub(2, 3), 16),
-    tonumber(c:sub(4, 5), 16),
-    tonumber(c:sub(6, 7), 16),
-  }
+  return { tonumber(c:sub(2, 3), 16), tonumber(c:sub(4, 5), 16), tonumber(c:sub(6, 7), 16) }
 end
 
 ---@param foreground string foreground color
@@ -24,16 +21,9 @@ M.blend = function(foreground, background, alpha)
     return math.floor(math.min(math.max(0, ret), 255) + 0.5)
   end
 
-  return string.format(
-    "#%02x%02x%02x",
-    blendChannel(1),
-    blendChannel(2),
-    blendChannel(3)
-  )
+  return string.format("#%02x%02x%02x", blendChannel(1), blendChannel(2), blendChannel(3))
 end
 
-M.darken = function(hex, amount, bg)
-  return M.blend(hex, bg or "#161616", amount)
-end
+M.darken = function(hex, amount, bg) return M.blend(hex, bg or "#161616", amount) end
 
 return M

@@ -1,3 +1,7 @@
+return {
+  opt = {
+    wrap = true,
+    timeoutlen = 250,
     fillchars = {
       foldopen = "",
       foldclose = "",
@@ -6,3 +10,5 @@
       diff = "╱",
       eob = " ",
     },
+  },
+}

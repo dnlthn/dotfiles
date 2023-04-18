@@ -100,4 +100,5 @@ return {
   TreesitterContext = { bg = colors.cursor },
   IndentBlanklineChar = { fg = colors.cursor },
   IndentBlanklineContextChar = { fg = colors.turquoise },
+  NeotreeFloatBorder = { fg = colors.turquoise, bg = colors.bg },
 }

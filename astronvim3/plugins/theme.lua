@@ -1,5 +1,6 @@
 return {
   { "nyoom-engineering/oxocarbon.nvim" },
+  { "folke/todo-comments.nvim",        opts = {}, event = "User AstroFile" },
   {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {

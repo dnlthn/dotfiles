@@ -129,4 +129,17 @@ return {
   CmpItemKindFile = { fg = colors.purple, bg = "none" },
   CmpItemKindFolder = { fg = colors.green, bg = "none" },
   CmpItemKindColor = { fg = colors.turquoise, bg = "none" },
+  -- Heirline Colors used in AstroNvim
+  HeirlineInactive = { bg = colors.onyx },
+  HeirlineNormal = { bg = colors.pink },
+  HeirlineInsert = { bg = colors.green },
+  HeirlineVisual = { bg = colors.purple },
+  HeirlineReplace = { bg = colors.turquoise },
+  HeirlineCommand = { bg = colors.warning },
+  HeirlineTerminal = { bg = colors.green },
+  WinBar = { fg = colors.lighter_comment, bg = colors.bg },
+  WinBarNC = { fg = colors.comment, bg = colors.bg },
+  GitSignsAdd = { fg = colors.green },
+  GitSignsChange = { fg = colors.warning },
+  GitSignsDelete = { fg = colors.pink },
 }

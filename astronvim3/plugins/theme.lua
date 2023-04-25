@@ -128,4 +128,12 @@ return {
       },
     },
   },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        results_title = false,
+      },
+    },
+  },
 }

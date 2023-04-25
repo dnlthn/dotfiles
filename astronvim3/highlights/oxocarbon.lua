@@ -74,6 +74,7 @@ return {
   TelescopePromptNormal = { bg = colors.bg },
   TelescopePromptCounter = { fg = colors.comment },
   TelescopePromptTitle = { fg = colors.lighter_comment },
+  TelescopePromptPrefix = { fg = colors.onyx, bg = "none" },
   TelescopePreviewTitle = { fg = colors.lighter_comment },
   -- Semantic Tokens
   ["@lsp.type.comment"] = { link = "@comment" },

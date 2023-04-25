@@ -80,4 +80,52 @@ return {
       },
     },
   },
+  {
+    "rcarriga/nvim-dap-ui",
+    opts = { floating = { border = "single" } },
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ui = {
+        border = "single",
+      },
+    },
+  },
+  {
+    "stevearc/dressing.nvim",
+    opts = {
+      input = {
+        title_pos = "center",
+        border = "single",
+        prefer_width = 25,
+        win_options = { winblend = 0, winhighlight = "Normal:Normal,NormalNC:Normal" },
+      },
+    },
+  },
+  {
+    "kevinhwang91/nvim-ufo",
+    opts = {
+      preview = {
+        win_config = {
+          border = "single",
+          winblend = 0,
+        },
+      },
+    },
+  },
+  {
+    "akinsho/toggleterm.nvim",
+    opts = {
+      float_opts = {
+        border = "single",
+        highlights = { border = "#393939", background = "Normal" },
+      },
+      highlights = {
+        FloatBorder = {
+          guifg = "#393939",
+        },
+      },
+    },
+  },
 }

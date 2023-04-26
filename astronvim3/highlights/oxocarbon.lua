@@ -142,4 +142,6 @@ return {
   GitSignsAdd = { fg = colors.green },
   GitSignsChange = { fg = colors.warning },
   GitSignsDelete = { fg = colors.pink },
+  GlanceWinBarTitle = { fg = colors.purple },
+  GlanceListCount = { fg = colors.pink },
 }

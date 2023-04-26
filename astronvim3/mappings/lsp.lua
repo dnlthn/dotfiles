@@ -1,16 +1,8 @@
 return {
   n = {
-    ["gr"] = {
-      function()
-        require("telescope.builtin").lsp_references(require("telescope.themes").get_dropdown {
-          initial_mode = "normal",
-          preview_title = false,
-          layout_config = {
-            width = { 0.9, max = 120 },
-          },
-        })
-      end,
-      desc = "Search references",
-    },
+    ["gr"] = { "<cmd>Glance references<cr>", desc = "Glance references" },
+    ["gd"] = { "<cmd>Glance definitions<cr>", desc = "Glance definition" },
+    ["gy"] = { "<cmd>Glance type_definitions<cr>", desc = "Glance types" },
+    ["gI"] = { "<cmd>Glance implementations<cr>", desc = "Glance implementations" },
   },
 }
